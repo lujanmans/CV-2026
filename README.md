@@ -1,1 +1,1 @@
-https://github.com/lujanmans/CV-2026
+https://lujanmans.github.io/CV-2026/
