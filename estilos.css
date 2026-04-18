@@ -23,8 +23,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    background: white;
+    text-align: center; 
+    background: white; /* esta propiedad no está produciendo cambios */
     padding: 40px 20px;
     border-radius: 20px;
     box-shadow: 0 10px 20px seagreen;
@@ -44,7 +44,7 @@ header h1 {
     font-size: 2.5em;
     color: black;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 700; /* no produce cambios */
 }
 
 section p {
@@ -68,12 +68,12 @@ main {
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e9ecef;
-}
+} /* si todos y absolutamente todos tus h3 tienen las mismas propiedades no tiene sentido que llames a cada una por medio de varias class, directamente poné el h3 como selector */
 
 .sobremi:hover, .educacion:hover, .experiencia:hover, .skills:hover, .herramientas:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-}
+} /* idem sobre los h3 */
 
 section h3 {
     color: seagreen;
@@ -81,12 +81,12 @@ section h3 {
     margin-bottom: 20px;
     border-bottom: 3px solid seagreen;
     padding-bottom: 10px;
-}
+} /* esta es otra forma de llamar a lo mismo, no repitas! tenés que tener un orden claro sobre cómo vas a organizarte porque sino después empezás a pisar propiedades, como el border y el padding */
 
 ul li {
     padding: 12px 0;
     padding-left: 30px;
-    transform: translate(0);
+    transform: translate(0); /* esta propiedad no produce cambios y tampoco tiene sentido de usarse */
     font-size: 1.1em;
 }
 
@@ -98,26 +98,26 @@ ul li::before {
 }
 
 .experiencia {
-    display: flex;
+    display: flex; /* no tiene ningún sentido que una etiqueta de texto tenga flex */
     flex-direction: column;
-}
+} 
 
 .trabajo {
-    display: flex;
+    display: flex; /* no tiene ningún sentido que una etiqueta de texto tenga flex */
     flex-direction: column;
     border-left: 4px solid seagreen;
     padding-left: 25px;
 }
 
-.trabajo h4 {
+.trabajo h4 { 
     color: black;
     font-size: 1.3em;
     margin: 0;
-}
+} /* trabajo y h4 son exactamente lo mismo, usá una sola vez las propiedades, ya lo usaste en la 105 */
 
 .trabajo h4 strong {
     color: seagreen;
-}
+} /* no es correcto usar strong porque ya tenés definido este h4 en la línea 105 con un selector de clase */
 
 .contenedor ul {
     display: flex;

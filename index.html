@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html> 
     <head>
          <meta charset="utf-8"/>
          <title>Mariana Mansilla </title>
          <link href="estilos.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
+    <body><!-- -->
         <header>
-            <img src="img/"alt=""width=""height="">
+            <img src="img/"alt=""width=""height=""> <!-- no te olvides de poner todos los atributos -->
             <h1>Mariana Luján Mansilla</h1>
         </header>
         <main>
@@ -17,7 +17,7 @@
                 <p>Diseñadora gráfica con experiencia en proyectos del área editorial, branding y packaging</p>
             </section>
             <section>
-                <h3 class="educacion">Estudios</h3>
+                <h3 class="educacion">Estudios</h3> <!-- las class que les estás aplicando a los h3 quedarían mejor semánticamente en las sections para darles un contexto, acá no es relevante --> 
                 <ul>
                     <li>Licenciatura en Diseño y Comunicación Visual (2020-actualidad)</li>
                     <li>Curso de Diseño UI (2026-actualidad)</li>
@@ -55,7 +55,7 @@
             <section>
                 <h3 class="herramientas">Herramientas</h3>
                   <div class="contenedor">
-                    <ul class="uno">
+                    <ul class="uno"> <!-- te conviene unificar las dos ul para que, conceptualmente, quede todo en un mismo contexto de "lista de herramientas" y después con css hagas que los items "bajen" con la propiedad flex-wrap, principalmente porque cuando veamos mobile o se vea esta página en una pantalla distinta te vas a frustrar de que no se muestre como vos querés. Dentro de la web hay que abandonar la idea de tener el control de todo porque todo es flexible.  -->
                       <li>Adobe Illustrator</li>
                       <li>Adobe Indesign</li>
                       <li>Adobe Photoshop</li>
